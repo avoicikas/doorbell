@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Door Control</title>
+    <link rel="stylesheet" href="../static/style.css/">
+</head>
+ <body>
+  <h1>Door Control</h1>
+  <h2>{{ time }}</h2>
+  <h2>Options:</h2>
+		<h3> Open the doors =>
+				<a href="/openDoors/on"class="button">Open</a>
+		</h3>
+
+        <h3> Bell sound
+			{% if  bellSound ==  1 %}
+				<a href="/bellSound/off" class="button">TURN OFF</a>
+			{% else %}
+				<a href="/bellSound/on" class="button">TURN ON</a>
+			{% endif %}
+		</h3>
+ </body>
+</html>
